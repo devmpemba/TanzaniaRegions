@@ -15,7 +15,6 @@
       }
     },
     "require": {
-      "salimmbise/tanzania-regions": "dev-master"
     },
     "minimum-stability": "dev"
 
