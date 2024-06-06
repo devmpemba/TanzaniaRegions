@@ -8,7 +8,7 @@ class TanzaniaRegions
 
     public function __construct()
     {
-        $this->data = json_decode(file_get_contents(storage_path('app/regions_and_districts.json')), true);
+        $this->data = json_decode(file_get_contents(__DIR__ . '/../data/regions_and_districts.json'), true);
     }
 
     public function getRegions()
