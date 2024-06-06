@@ -1,19 +1,21 @@
 {
-    "name": "salimmbise/tanzania-regions",
-    "description": "A Laravel package to get Tanzanian regions and their districts",
-    "type": "library",
-    "autoload": {
-      "psr-4": {
-        "SalimMbise\\TanzaniaRegions\\": "src/"
-      }
-    },
-    "extra": {
-      "laravel": {
-        "providers": [
-          "SalimMbise\\TanzaniaRegions\\TanzaniaRegionsServiceProvider"
-        ]
-      }
-    },
-    "require": {}
+  "name": "salimmbise/tanzania-regions",
+  "require": {
+    "salimmbise/tanzania-regions": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "description": "A Laravel package to get Tanzanian regions and their districts",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "SalimMbise\\TanzaniaRegions\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SalimMbise\\TanzaniaRegions\\TanzaniaRegionsServiceProvider"
+      ]
+    }
   }
-  
+}
