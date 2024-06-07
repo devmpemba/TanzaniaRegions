@@ -52,4 +52,12 @@ class TanzaniaRegions
             }
         }
     }
+
+    public function getAllData()
+    {
+        return $this->data;
+    }
+
+
+
 }
