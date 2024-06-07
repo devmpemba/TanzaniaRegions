@@ -13,6 +13,11 @@ use SalimMbise\TanzaniaRegions\TanzaniaRegions;
 $tanzaniaRegions = new TanzaniaRegions();
 $regions = $tanzaniaRegions->getRegions();
 
+## Get All Regions, Districts and Wards (with Postcode)
+
+$regions = new TanzaniaRegions();
+$allRegionsData = $regions->getAllData();
+
 ## Get All Districts
 
 $tanzaniaRegions = new TanzaniaRegions();
