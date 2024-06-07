@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace SalimMbise\TanzaniaRegions;
 
@@ -18,6 +18,25 @@ class TanzaniaRegions
 
     public function getDistricts($region)
     {
-        return $this->data[$region] ?? [];
+        if (!isset($this->data[$region])) {
+            return [];
+        }
+        return array_keys($this->data[$region]);
+    }
+
+    public function getWards($region, $district)
+    {
+        if (!isset($this->data[$region][$district])) {
+            return [];
+        }
+        return array_keys($this->data[$region][$district]['wards']);
+    }
+
+    public function getWardPostcode($region, $district, $ward)
+    {
+        if (!isset($this->data[$region][$district]['wards'][$ward])) {
+            return null;
+        }
+        return $this->data[$region][$district]['wards'][$ward];
     }
 }
