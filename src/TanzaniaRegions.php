@@ -39,4 +39,17 @@ class TanzaniaRegions
         }
         return $this->data[$region][$district]['wards'][$ward];
     }
+
+    public function displayAll()
+    {
+        foreach ($this->data as $region => $districts) {
+            echo "Region: " . $region . "\n";
+            foreach ($districts as $district => $info) {
+                echo "  District: " . $district . "\n";
+                foreach ($info['wards'] as $ward => $postcode) {
+                    echo "    Ward: " . $ward . " - Postcode: " . $postcode . "\n";
+                }
+            }
+        }
+    }
 }
